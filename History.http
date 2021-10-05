@@ -1,0 +1,25 @@
+get https://localhost:5001/History
+
+###
+get https://localhost:5001/History/1
+
+###
+post https://localhost:5001/History
+Content-Type: application/json
+
+{
+  "Customer": "Artem",
+  "Count" : 2,
+  "ProductID": 1
+}
+
+###
+put https://localhost:5001/History
+Content-Type: application/json
+
+{
+  "Id": 1,
+  "Name": "Товар1",
+  "Thumb": "asd",
+  "Price": 123.22
+}

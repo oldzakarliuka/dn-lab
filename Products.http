@@ -1,0 +1,32 @@
+get https://localhost:5001/Products
+
+###
+get https://localhost:5001/Products/1
+
+###
+post https://localhost:5001/Products
+Content-Type: application/json
+
+{
+  "Name": "Товар2",
+  "Thumb": "asd",
+  "Price": 123.22,
+  "Count": 12
+}
+
+###
+put https://localhost:5001/Products
+Content-Type: application/json
+
+{
+  "Id": 1,
+  "Name": "iphone",
+  "Thumb": "asd",
+  "Price": 123.22,
+  "Count": 2
+}
+
+
+###
+delete https://localhost:5001/Products/5
+Content-Type: application/json

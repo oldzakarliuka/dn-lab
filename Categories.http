@@ -1,0 +1,29 @@
+get https://localhost:5001/Categories
+
+###
+get https://localhost:5001/Categories/1
+
+###
+post https://localhost:5001/Categories
+Content-Type: application/json
+
+{
+  "Name": "Категория1",
+  "Products": [1]
+}
+
+###
+
+put https://localhost:5001/Categories
+Content-Type: application/json
+
+{
+  "Id": "1",
+  "Name": "Категория1", 
+  "Products": [1,2]
+}
+
+
+###
+delete https://localhost:5001/Categories/4
+Content-Type: application/json

@@ -1,0 +1,33 @@
+get https://localhost:5001/Reviews
+
+###
+get https://localhost:5001/Reviews/d3122cfa-c044-47b5-91bd-52f02b196e70
+
+###
+post https://localhost:5001/Reviews
+Content-Type: application/json
+
+{
+  "Name": "Artem",
+  "Text": "hello world",
+  "Rating" : 5,
+  "ProductID": 1
+}
+
+###
+
+put https://localhost:5001/Reviews
+Content-Type: application/json
+
+{
+  "Id": "d3122cfa-c044-47b5-91bd-52f02b196e70",
+   "Name": "Artem",
+  "Text": "hello world",
+  "Rating" : 5,
+  "ProductID": 1
+}
+
+
+###
+delete https://localhost:5001/Reviews/d3122cfa-c044-47b5-91bd-52f02b196e70
+Content-Type: application/json
